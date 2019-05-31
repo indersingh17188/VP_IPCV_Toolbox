@@ -22,12 +22,15 @@ function varargout = Main_VP(varargin)
 
 % Edit the above text to modify the response to help Main_VP
 
+<<<<<<< HEAD
 % <<<<<<< HEAD
 % % Last Modified by GUIDE v2.5 31-May-2019 18:47:28
 % =======
 % % Last Modified by GUIDE v2.5 31-May-2019 18:07:16
 % >>>>>>> edbba30d95e6179d88dc158129f31866e5fa58d5
 
+=======
+>>>>>>> 586eee18a473097eb5165e65387abd873a0a8eec
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
@@ -1050,7 +1053,10 @@ function pushbutton37_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 586eee18a473097eb5165e65387abd873a0a8eec
 % --- Executes on button press in Hist_radio.
 function Hist_radio_Callback(hObject, eventdata, handles)
 % hObject    handle to Hist_radio (see GCBO)
@@ -1101,7 +1107,10 @@ set(handles.ColorSpace_radio, 'value', 0);
 set(handles.Hist_radio, 'value', 0);
 set(handles.Morph_radio, 'value', 1);
 
+<<<<<<< HEAD
 % Hint: get(hObject,'Value') returns toggle state of Morph_radio
+=======
+>>>>>>> 586eee18a473097eb5165e65387abd873a0a8eec
 
 % --- Executes on button press in pushbuttonchecker.
 function pushbuttonchecker_Callback(hObject, eventdata, handles)
@@ -1279,3 +1288,13 @@ ylabel('y-axis');
 zlabel('z-axis')
 
 title('Up to Scale Reconstruction of the Scene');
+<<<<<<< HEAD
+=======
+
+
+% --- Executes on button press in pushbutton42.
+function pushbutton42_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton42 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+>>>>>>> 586eee18a473097eb5165e65387abd873a0a8eec
