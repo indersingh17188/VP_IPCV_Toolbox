@@ -22,11 +22,11 @@ function varargout = Main_VP(varargin)
 
 % Edit the above text to modify the response to help Main_VP
 
-<<<<<<< HEAD
-% Last Modified by GUIDE v2.5 31-May-2019 18:10:05
-=======
-% Last Modified by GUIDE v2.5 31-May-2019 18:07:16
->>>>>>> edbba30d95e6179d88dc158129f31866e5fa58d5
+% <<<<<<< HEAD
+% % Last Modified by GUIDE v2.5 31-May-2019 18:47:28
+% =======
+% % Last Modified by GUIDE v2.5 31-May-2019 18:07:16
+% >>>>>>> edbba30d95e6179d88dc158129f31866e5fa58d5
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -210,25 +210,25 @@ function pushbutton8_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 
-% --- Executes on selection change in popupmenu2.
-function popupmenu2_Callback(hObject, eventdata, handles)
-% hObject    handle to popupmenu2 (see GCBO)
+% --- Executes on selection change in Filter_popupmenu.
+function Filter_popupmenu_Callback(hObject, eventdata, handles)
+% hObject    handle to Filter_popupmenu (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-a= get(handles.popupmenu2, 'value')
+a= get(handles.Filter_popupmenu, 'value')
 if (a==1)
     set(handles.LPF_uibuttongroup, 'visible', 'on')
 else
     set(handles.HPF_uibuttongroup, 'visible', 'on')
 end
 
-% Hints: contents = cellstr(get(hObject,'String')) returns popupmenu2 contents as cell array
-%        contents{get(hObject,'Value')} returns selected item from popupmenu2
+% Hints: contents = cellstr(get(hObject,'String')) returns Filter_popupmenu contents as cell array
+%        contents{get(hObject,'Value')} returns selected item from Filter_popupmenu
 
 
 % --- Executes during object creation, after setting all properties.
-function popupmenu2_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to popupmenu2 (see GCBO)
+function Filter_popupmenu_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to Filter_popupmenu (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -815,6 +815,8 @@ function Canny_pushbutton_Callback(hObject, eventdata, handles)
 % hObject    handle to Canny_pushbutton (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+count = get(handles.EdgDetThresh_edit,'String');
+count = num2str(count);
 
 
 % --- Executes on button press in Log_pushbutton.
@@ -822,6 +824,8 @@ function Log_pushbutton_Callback(hObject, eventdata, handles)
 % hObject    handle to Log_pushbutton (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+count = get(handles.EdgDetThresh_edit,'String');
+count = num2str(count);
 
 
 % --- Executes on button press in Robert_pushbutton.
@@ -829,6 +833,8 @@ function Robert_pushbutton_Callback(hObject, eventdata, handles)
 % hObject    handle to Robert_pushbutton (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+count = get(handles.EdgDetThresh_edit,'String');
+count = num2str(count);
 
 
 % --- Executes on button press in Sobel_pushbutton.
@@ -836,6 +842,8 @@ function Sobel_pushbutton_Callback(hObject, eventdata, handles)
 % hObject    handle to Sobel_pushbutton (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+count = get(handles.EdgDetThresh_edit,'String');
+count = num2str(count);
 
 
 % --- Executes on button press in ZeroCross_pushbutton.
@@ -843,6 +851,8 @@ function ZeroCross_pushbutton_Callback(hObject, eventdata, handles)
 % hObject    handle to ZeroCross_pushbutton (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+count = get(handles.EdgDetThresh_edit,'String');
+count = num2str(count);
 
 
 % --- Executes on button press in Prewit_pushbutton.
@@ -850,6 +860,8 @@ function Prewit_pushbutton_Callback(hObject, eventdata, handles)
 % hObject    handle to Prewit_pushbutton (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+count = get(handles.EdgDetThresh_edit,'String');
+count = num2str(count);
 
 
 
@@ -1038,7 +1050,7 @@ function pushbutton37_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 
-<<<<<<< HEAD
+
 % --- Executes on button press in Hist_radio.
 function Hist_radio_Callback(hObject, eventdata, handles)
 % hObject    handle to Hist_radio (see GCBO)
@@ -1090,7 +1102,7 @@ set(handles.Hist_radio, 'value', 0);
 set(handles.Morph_radio, 'value', 1);
 
 % Hint: get(hObject,'Value') returns toggle state of Morph_radio
-=======
+
 % --- Executes on button press in pushbuttonchecker.
 function pushbuttonchecker_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbuttonchecker (see GCBO)
@@ -1267,4 +1279,3 @@ ylabel('y-axis');
 zlabel('z-axis')
 
 title('Up to Scale Reconstruction of the Scene');
->>>>>>> edbba30d95e6179d88dc158129f31866e5fa58d5
