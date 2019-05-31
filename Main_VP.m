@@ -22,7 +22,7 @@ function varargout = Main_VP(varargin)
 
 % Edit the above text to modify the response to help Main_VP
 
-% Last Modified by GUIDE v2.5 31-May-2019 16:32:13
+% Last Modified by GUIDE v2.5 31-May-2019 17:34:15
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -1003,3 +1003,10 @@ axes(handles.axes2);
 imshow(img_out);
 handles.img_out = img_out; guidata(hObject,handles);
             
+
+
+% --- Executes on button press in pushbutton37.
+function pushbutton37_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton37 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
