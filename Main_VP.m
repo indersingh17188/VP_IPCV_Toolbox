@@ -22,7 +22,11 @@ function varargout = Main_VP(varargin)
 
 % Edit the above text to modify the response to help Main_VP
 
+<<<<<<< HEAD
+% Last Modified by GUIDE v2.5 31-May-2019 18:10:05
+=======
 % Last Modified by GUIDE v2.5 31-May-2019 18:07:16
+>>>>>>> edbba30d95e6179d88dc158129f31866e5fa58d5
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -66,6 +70,16 @@ axes(handles.axes2);
 set(gca,'XtickLabel',[],'YtickLabel',[]);
 
 
+set(handles.ColorSpace_radio, 'value', 0);
+set(handles.Hist_radio, 'value', 0);
+set(handles.Morph_radio, 'value', 0);
+
+
+
+
+set(handles.ColSpace_uibuttongroup, 'visible', 'off');
+set(handles.Hist_buttongroup, 'visible', 'off');
+set(handles.Morph_uibuttongroup, 'visible', 'off');
 
 set(handles.Basic_uibuttongroup,'visible','off');
 set(handles.EdgLine_uibuttongroup,'visible','off');
@@ -1024,6 +1038,59 @@ function pushbutton37_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 
+<<<<<<< HEAD
+% --- Executes on button press in Hist_radio.
+function Hist_radio_Callback(hObject, eventdata, handles)
+% hObject    handle to Hist_radio (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+set(handles.ColSpace_uibuttongroup, 'visible', 'off');
+set(handles.Hist_buttongroup, 'visible', 'on');
+set(handles.Morph_uibuttongroup, 'visible', 'off');
+
+set(handles.ColorSpace_radio, 'value', 0);
+set(handles.Hist_radio, 'value', 1);
+set(handles.Morph_radio, 'value', 0);
+
+
+% Hint: get(hObject,'Value') returns toggle state of Hist_radio
+
+
+% --- Executes on button press in ColorSpace_radio.
+function ColorSpace_radio_Callback(hObject, eventdata, handles)
+% hObject    handle to ColorSpace_radio (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+set(handles.ColSpace_uibuttongroup, 'visible', 'on');
+set(handles.Hist_buttongroup, 'visible', 'off');
+set(handles.Morph_uibuttongroup, 'visible', 'off');
+
+set(handles.ColorSpace_radio, 'value', 1);
+set(handles.Hist_radio, 'value', 0);
+set(handles.Morph_radio, 'value', 0);
+
+
+
+
+
+% Hint: get(hObject,'Value') returns toggle state of ColorSpace_radio
+
+
+% --- Executes on button press in Morph_radio.
+function Morph_radio_Callback(hObject, eventdata, handles)
+% hObject    handle to Morph_radio (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+set(handles.ColSpace_uibuttongroup, 'visible', 'off');
+set(handles.Hist_buttongroup, 'visible', 'off');
+set(handles.Morph_uibuttongroup, 'visible', 'on');
+
+set(handles.ColorSpace_radio, 'value', 0);
+set(handles.Hist_radio, 'value', 0);
+set(handles.Morph_radio, 'value', 1);
+
+% Hint: get(hObject,'Value') returns toggle state of Morph_radio
+=======
 % --- Executes on button press in pushbuttonchecker.
 function pushbuttonchecker_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbuttonchecker (see GCBO)
@@ -1200,3 +1267,4 @@ ylabel('y-axis');
 zlabel('z-axis')
 
 title('Up to Scale Reconstruction of the Scene');
+>>>>>>> edbba30d95e6179d88dc158129f31866e5fa58d5
